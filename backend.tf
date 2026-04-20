@@ -9,11 +9,12 @@ terraform {
   }
 
   # Uncomment for remote state (recommended for teams)
-     backend "s3" {
-     bucket         = "my-terraform-bucket-23"
-     key            = "virginia"
-     region         = "us-east-1"
-     dynamodb_table = "terraform-lock"
-     encrypt        = true
+  backend "s3" {
+  bucket       = "my-terraform-bucket-23"
+  key          = "virginia"
+  region       = "us-east-1"
+  use_lockfile = true
+  encrypt      = true
+}
    }
 }
