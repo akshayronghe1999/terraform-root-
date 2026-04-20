@@ -25,7 +25,7 @@ stages {
         steps {
             checkout scmGit(
                 branches: [[name: "*/${params.BRANCH}"]],
-                userRemoteConfigs: [[url: 'https://github.com/ygminds73/terraform-root.git']]
+                userRemoteConfigs: [[url: 'https://github.com/akshayronghe1999/terraform-root-.git']]
             )
         }
     }
